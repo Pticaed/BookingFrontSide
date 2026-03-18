@@ -1,0 +1,68 @@
+.root {
+	padding: 40px 24px; 
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	gap: 20px;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1024px) {
+    
+
+	.grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.grid > :nth-child(-n+3) {
+		grid-column: span 2;
+	}
+
+	.grid > :nth-child(n+4) {
+		grid-column: span 3;
+	}
+}
+
+@media (max-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.grid > :nth-child(-n+3) {
+		grid-column: span 1;
+	}
+
+	.grid > :nth-child(n+4) {
+		grid-column: span 1;
+	}
+
+	.grid > :last-child {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 640px) {
+    .grid > :nth-child(-n+3) {
+		grid-column: span 1;
+	}
+
+	.grid > :nth-child(n+4) {
+		grid-column: span 1;
+	}
+
+	.root {
+		padding: 32px clamp(16px, 6vw, 24px);
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.grid > :last-child {
+		grid-column: 1 / -1;
+	}
+}
