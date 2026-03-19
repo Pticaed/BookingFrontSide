@@ -11,13 +11,13 @@ export const Header = () => {
 
         <div className={styles.actions}>
           <button className={styles.lang}>
-            <img src="./public/img/lang.png" alt="Language" />
+            <img src="./img/headerImg/lang.png" alt="Language" />
           </button>
 
           <button className={styles.ghost}>Register</button>
           <button className={styles.ghost}>
             Sign In
-            <img src="./public/img/avatar.svg" className={styles.avatar} />
+            <img src="./img/headerImg/avatar.svg" className={styles.avatar} />
           </button>
         </div>
 
