@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HotelCard.module.scss";
 import { Star1 } from "iconsax-react";
 
@@ -12,13 +11,6 @@ const HotelCard = () => {
         />
 
         <div className={styles.favorite}>★</div>
-
-        <div className={styles.dots}>
-          <span className={styles.active}></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
 
       <div className={styles.info}>
