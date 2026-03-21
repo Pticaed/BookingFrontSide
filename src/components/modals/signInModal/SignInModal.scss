@@ -97,8 +97,13 @@
     margin-top: 12px;
     transition: background 0.2s;
 
-    &:hover {
+    &:hover:enabled {
       background-color: #5930d8;
+    }
+
+    &:disabled {
+      background-color: #ccc; 
+      cursor: not-allowed;
     }
   }
 

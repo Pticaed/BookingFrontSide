@@ -98,7 +98,11 @@ const SignInModal = ({ isOpen, onClose }) => {
             Don't have an account?
           </p>
 
-          <button type="submit" className="modal__continue">
+          <button
+            type="submit"
+            className="modal__continue"
+            disabled={!email.trim() || !password.trim()} 
+          >
             Continue
           </button>
           <div className="modal__social">
