@@ -1,6 +1,14 @@
 import styles from "../Header.module.scss";
+import RegisterModal from "../../../components/modals/registerModal/RegisterModal"
+
+import { useState } from "react";
 
 export const Header = () => {
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+
+  const openRegister = () => setIsRegisterOpen(true);
+  const closeRegister = () => setIsRegisterOpen(false);
+  
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -14,7 +22,11 @@ export const Header = () => {
             <img src="./img/headerImg/lang.png" alt="Language" />
           </button>
 
-          <button className={styles.ghost}>Register</button>
+          <button 
+            className={styles.ghost}
+            onClick={openRegister}
+            
+            >Register</button>
           <button className={styles.ghost}>
             Sign In
             <img src="./img/headerImg/avatar.svg" className={styles.avatar} />
@@ -22,6 +34,10 @@ export const Header = () => {
         </div>
 
       </div>
+      <RegisterModal
+        isOpen={isRegisterOpen}
+        onClose={closeRegister}
+      />
     </header>
   );
 };
