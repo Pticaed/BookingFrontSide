@@ -1,8 +1,3 @@
-import SafeWithUs from '../../widgets/SafeWithUs/SafeWithUs';
-import Carousel from "../../widgets/carousel/Carousel";
-import SearchBar from "../../widgets/searchBar/SearchBar";
-import './MainPage.css';
-import HotelsList from "../../components/hotelCardWrapperComponents/hotelList";
 export default function MainPage() {
     return (
         <>
@@ -16,6 +11,7 @@ export default function MainPage() {
                 </div>
                 <HotelsList></HotelsList>
             </main>
+            <ReviewSection />
             <SafeWithUs />
             {/* DEV ONLY: remove before push */}
         </>

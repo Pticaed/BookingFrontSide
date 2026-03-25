@@ -1,0 +1,13 @@
+.header {
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin: 0; // Необходимо доделать после настройки базового стиля шрифтов
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
