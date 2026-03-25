@@ -23,6 +23,7 @@ const HotelCard = () => {
           <Star1 size="16" color="#6c5ce7" variant="Bold" />
           <Star1 size="16" color="#6c5ce7" variant="Bold" />
           <Star1 size="16" color="#6c5ce7" variant="Bold" />
+          <Star1 size="16" color="#6c5ce7" variant="Bold" />
         </div>
 
         <div className={styles.distance}>
@@ -30,7 +31,7 @@ const HotelCard = () => {
         </div>
 
         <div className={styles.price}>
-          <span className={styles.amount}>$ 130</span> night
+          <b><span className={styles.amount}>$ 130</span> night</b>
         </div>
       </div>
     </div>
