@@ -1,0 +1,15 @@
+.carouselWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative; 
+}
+
+.searchBarAbsolute {
+  position: absolute;
+  left: 50%;       
+  bottom: 0;        
+  transform: translateX(-50%) translateY(50%);
+  z-index: 10;
+  width: 100%;
+}

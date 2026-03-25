@@ -5,21 +5,13 @@ import Carousel from "./widgets/carousel/Carousel";
 import SearchBar from "./widgets/searchBar/SearchBar";
 import './App.css';
 import HotelsList from "./components/hotelCardWrapperComponents/hotelList";
+import { AppRouter } from "./app/routes/AppRouter";
 
 export default function App() {
   return (
     <div className="App">
       <Header />
-      <main>
-         <div className="carouselWrapper">
-          <Carousel />
-          <div className="searchBarAbsolute">
-            <SearchBar />
-          </div>
-        </div>
-
-        <HotelsList></HotelsList>
-      </main>
+      <AppRouter />
       <Footer />  
     </div>
   );

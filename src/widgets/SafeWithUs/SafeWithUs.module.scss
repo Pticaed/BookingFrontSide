@@ -1,21 +1,60 @@
 .root {
-	padding: 40px 24px; 
-	max-width: 1440px;
-	margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif; /* Замени на свой шрифт, например, Montserrat или Inter */
 }
 
 .title {
-	margin-bottom: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .grid {
-	display: grid;
-	gap: 20px;
-	width: 100%;
-	grid-template-columns: repeat(5, 1fr);
-	* {
-		align-items: center;
-		justify-content: center;
-	}
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Чтобы на мобилках карточки переносились */
 }
 
+/* Стили для компонента CardImageText */
+.card {
+  flex: 1;
+  min-width: 200px;
+  max-width: 230px;
+  aspect-ratio: 1 / 1.1; /* Делает карточки почти квадратными */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Легкий интерактив при наведении */
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
