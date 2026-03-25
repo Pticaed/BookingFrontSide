@@ -3,6 +3,13 @@
 }
 
 .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 40px;
+    font-weight: 400;
     margin: 0; // Необходимо доделать после настройки базового стиля шрифтов
 }
 
